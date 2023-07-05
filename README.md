@@ -71,8 +71,8 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 ## Mock-Up
 
-URL of the deployed application: https://fierce-scrubland-54723-0ef5622eefaa.herokuapp.com/
-URL of GitHub Repository: https://github.com/kaitlynatif/Book_Search_Engine
+- URL of the deployed application: https://fierce-scrubland-54723-0ef5622eefaa.herokuapp.com/
+- URL of GitHub Repository: https://github.com/kaitlynatif/Book_Search_Engine
 
 As you can see in the following animation, a user can type a search term (in this case, "star wars") in a search box and the results appear:
 
