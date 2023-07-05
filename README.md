@@ -1,21 +1,31 @@
-# 21 MERN: Book Search Engine
+# MERN: Book Search Engine
 
-## Your Task
+## Table of Contents:
+- [The Challenge](#The-Challenge)
+- [User Story](#User-Story)
+- [Acceptance Criteria](#Acceptance-Criteria)
+- [Mock-Up](#Mock-Up)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Built With](#Built-With)
+- [What I Learned](#What-I-Learned)
+- [Continued Development](#Continued-Development)
+- [License](#License)
+- [Author](#Author)
 
-Your assignment this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
+## The Challenge
 
-This week, you’ll take starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end. 
+In this challenge, I take starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end. 
 
-To complete the assignment, you’ll need to do the following:
+To complete the challenge, I did the following:
 
 1. Set up an Apollo Server to use GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
 
-2. Modify the existing authentication middleware so that it works in the context of a GraphQL API.
+2. Modified the existing authentication middleware so that it works in the context of a GraphQL API.
 
 3. Create an Apollo Provider so that requests can communicate with an Apollo Server.
 
-4. Deploy your application to Heroku with a MongoDB database using MongoDB Atlas. Use the [Deploy with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas) walkthrough for instructions.
-
+4. Deployed my application to Heroku with a MongoDB database using MongoDB Atlas. Use the [Deploy with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas) walkthrough for instructions.
 
 ## User Story
 
@@ -24,7 +34,6 @@ AS AN avid reader
 I WANT to search for new books to read
 SO THAT I can keep a list of books to purchase
 ```
-
 
 ## Acceptance Criteria
 
@@ -60,14 +69,14 @@ WHEN I click on the Logout button
 THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 ```
 
-
 ## Mock-Up
 
-Let's start by revisiting the web application's appearance and functionality.
+URL of the deployed application: https://fierce-scrubland-54723-0ef5622eefaa.herokuapp.com/
+URL of GitHub Repository: https://github.com/kaitlynatif/Book_Search_Engine
 
 As you can see in the following animation, a user can type a search term (in this case, "star wars") in a search box and the results appear:
 
-![Animation shows "star wars" typed into a search box and books about Star Wars appearing as results.](./Assets/21-mern-homework-demo-01.gif)
+![](./Assets/21-mern-homework-demo-01.gif)
 
 The user can save books by clicking "Save This Book!" under each search result, as shown in the following animation:
 
@@ -75,14 +84,7 @@ The user can save books by clicking "Save This Book!" under each search result, 
 
 A user can view their saved books on a separate page, as shown in the following animation:
 
-![The Viewing Lernantino's Books page shows the books that the user Lernaninto has saved.](./Assets/21-mern-homework-demo-03.gif)
-
-
-## Getting Started
-
-In order for this application to use a GraphQL API, you’ll need to refactor the API to use GraphQL on the back end and add some functionality to the front end. The following sections contain details about the files you’ll need to modify on the back end and the front end.
-
-**Important**: Make sure to study the application before building upon it. Better yet, start by making a copy of it. It's already a working application&mdash;you're converting it from RESTful API practices to a GraphQL API.
+![](./Assets/21-mern-homework-demo-03.gif)
 
 ### Back-End Specifications
 
@@ -187,78 +189,59 @@ Additionally, you’ll need to complete the following tasks in each of these fro
 
 * `LoginForm.js`: Replace the `loginUser()` functionality imported from the `API` file with the `LOGIN_USER` mutation functionality.
 
+## Installation
 
-## Grading Requirements
+To install necessary dependencies, run the following command:
+~~~
+npm i
+~~~
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+Insert connection link to local MongoDB database into the connection.js file directly or via dotenv
 
-This Challenge is graded based on the following criteria:
+To seed the database, run the follow command:
+~~~
+npm run seed
+~~~
 
-### Technical Acceptance Criteria: 40%
+## Usage
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+Perform a git clone and run the code with 
 
-	* Has an Apollo Server that uses GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
+~~~
+npm run develop
+~~~
 
-	* Use an Apollo Server and apply it to the Express.js server as middleware.
+Recommended softwares: 
+- MongoDB Compass to see database changes
+- Apollo Sandbox to view server-side queries and mutations
 
-	* Include schema settings for resolvers and typeDefs as outlined in the Challenge instructions.
+## License
+  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Open Source Initiative Link](https://opensource.org/licenses/MIT)
 
-	* Modify the existing authentication middleware to work in the context of a GraphQL API.
+### Copyright © 2023 [Kaitlyn Atif](https://github.com/kaitlynatif)
+```md
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-	* Use an Apollo Provider so that the application can communicate with the Apollo Server.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-	* Application must be deployed to Heroku.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
+## Author
 
-### Deployment: 32%
+Follow me on Github at [Kaitlyn Atif](https://github.com/kaitlynatif). Additional questions or concerns? Please contact me at kaitlynatif90@hotmail.com.
 
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to the deployed application.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+© 2023 [Kaitlyn Atif](https://github.com/kaitlynatif). Confidential and Proprietary. All Rights Reserved.
